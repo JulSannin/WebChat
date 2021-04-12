@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Spots | Home Page</title>
+    <link rel="stylesheet" href="../spots/CSS/fonts.css">
+    <link rel="stylesheet" href="../spots/CSS/room.css">
+    <link rel="stylesheet" href="../spots/CSS/media.css">
+    <link rel="stylesheet" href="../spots/icons/fontawesome-free-5.15.2-web/css/all.css">
+<body>
+    <div class="sidebar">
+        <div class="buttons left">
+            <a href="../spots/profile.html" class="radio convex">
+                <p>Профиль</p>
+            </a>
+            <a href="" class="radio convex">
+                <p>Контакты</p>
+            </a>
+            <a href="" class="radio convex">
+                <p>Комнаты</p>
+            </a>
+            <a href="" class="radio convex">
+                <p>Выход</p>
+            </a>
+
+        </div>
+    </div>
+    <div class="room">
+        <div class="screen concave">
+            
+        </div>
+        <div class="buttons bottom">
+            <div class="radio convex">
+                <i class="fas fa-microphone"></i>
+            </div>
+            <div class="radio convex">
+                
+            </div>
+            <div class="radio convex">
+                
+            </div>
+            <div id="exit" class="radio convex">
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+        </div>
+    </div>
+    <div class="buttons right">
+        <div class="radio convex">
+            
+        </div>
+        <div id="chat_switcher" class="radio convex switcher">
+            
+        </div>
+        <div class="radio convex">
+            
+        </div>
+    </div>
+    <div class="chat_bar">
+        <div class="chat concave">
+            <div class="message other">
+                <a href="" class="nickname">Ельчугин Е. В.</a>
+                <p>Привет</p>
+            </div>
+            <div class="message mine">
+                <a href="" class="nickname">Антонов М. Е.</a>
+                <p>Привет</p>
+            </div>
+            <div class="message other"></div>
+            <div class="mine"></div>
+            <div class="other"></div>
+            <div class="mine"></div>
+            <div class="other"></div>
+            <div class="mine"></div>
+            <div class="other"></div>
+            <div class="mine"></div>
+        </div>
+        <div class="send_box">
+            <input type="text" class="concave">
+            <button class="convex"></button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#chat_switcher').click(function(event) {
+                $('.chat_bar').toggleClass('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

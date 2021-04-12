@@ -1,0 +1,92 @@
+:root {
+  --front_BG: #242424;
+  --back_BG: #202020;
+  --bg: #121212;
+  --surface: #212121;
+  --text_color: #FFF;
+  --light: #1d1d1d;
+  --shade: #070707;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+    margin: 0%;
+    overflow: hidden;
+    background: var(--bg);
+}
+
+.title {
+	
+}
+
+.autorization {
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--bg);
+	padding: 9px 0;
+	border-radius: 8px;
+}
+
+.autorization .title {
+	color: var(--text_color);
+	font-size: 18px;
+}
+
+input {
+	width: 140px;
+	height: 36px;
+	padding: 0 12px;
+	margin: 9px 18px;
+	font-size: 14px;
+	color: var(--text_color);
+	background: var(--bg);
+	border: none;
+	border-radius: 4px;
+}
+
+button {
+	width: 140px;
+	height: 36px;
+	margin: 9px 0;
+	border: none;
+	border-radius: 4px;
+	color: var(--text_color);
+	background: var(--bg);
+
+	-webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.autorization button:hover {
+	box-shadow: -1px -1px 2px rgba(66, 66, 66, 0.25),
+	1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.autorization button:active {
+	background: linear-gradient(145deg, #101010, #131313);
+}
+
+.concave {
+	box-shadow: inset -6px -6px 12px rgba(66, 66, 66, 0.25),
+	inset 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.convex {
+	box-shadow: -6px -6px 12px rgba(66, 66, 66, 0.25),
+	6px 6px 12px rgba(0, 0, 0, 0.25);
+}

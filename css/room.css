@@ -1,0 +1,277 @@
+/*DEFAULT*/
+/*ROOT*/
+:root {
+  --front_BG: #242424;
+  --back_BG: #202020;
+  --bg: #121212;
+  --surface: #212121;
+  --text_color: #FFF;
+  --light: #1d1d1d;
+  --shade: #070707;
+}
+/*END*/
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+body {
+	display: flex;
+	align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+    background: var(--bg);
+}
+
+div {
+	/*border: 1px solid red;*/
+}
+/*END*/
+.radio {
+	display: block;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	margin: 16px;
+	color: var(--text_color);
+	background: var(--bg);
+	/*background: rgba( 0, 0, 0, 0.50 );
+	backdrop-filter: blur( 8.0px );
+	-webkit-backdrop-filter: blur( 8.0px );
+	-moz-backdrop-filter: blur( 8.0px );
+	-o-backdrop-filter: blur( 8.0px );
+	-ms-backdrop-filter: blur( 8.0px );
+	border: 1px solid rgba( 255, 255, 255, 0.18 );*/
+	-webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.radio:hover {
+	box-shadow: -1px -1px 2px rgba(66, 66, 66, 0.25),
+	1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.radio:active {
+	background: linear-gradient(145deg, #101010, #131313);
+}
+
+.sidebar {
+	
+}
+
+.sidebar .radio:hover {
+	width: 120px;
+}
+
+.buttons {
+	z-index: 2;
+	/*background: transparent;*/
+}
+
+
+/*.right .radio {
+	position: relative;
+	right: -100%;
+	-webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.right:hover .radio {
+	right: 0;
+}*/
+
+#chat_switcher {
+	height: 80px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.radio p {
+	font-family: "Nunito-SemiBold";
+	font-size: 14px;
+	line-height: 32px;
+	color: transparent;
+
+	-webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.radio:hover p {
+	color: var(--text_color);
+}
+
+.room {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	height: 100vh;
+	align-items: stretch;
+}
+
+.screen {
+	flex-grow: 1;
+	border-radius: 8px;
+}
+
+.bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 68px;
+	font-size: 18px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.bottom .radio {
+	margin: 16px 8px;
+}
+
+#exit {
+	font-size: 18px;
+	line-height: 36px;
+	text-align: center;
+}
+
+/*CHAT*/
+.chat_bar {
+	display: flex;
+	flex-direction: column;
+	width: 256px;
+	height: 100vh;
+	
+	z-index: 3;
+
+	-webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.hidden {
+	width: 0;
+}
+
+.chat {
+	display: flex;
+	flex-direction: column-reverse;
+	width: inherit;
+	flex-grow: 1;
+	z-index: 4;
+	background: var(--bg);
+	border-radius: 8px;
+	font-size: 18px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+/*SCROLLBAR*/
+.chat::-webkit-scrollbar       {background-color:transparent;width:16px}
+.chat::-webkit-scrollbar-track {background-color:transparent}
+.chat::-webkit-scrollbar-thumb {background-color: var(--surface);border-radius:16px;}
+/*END*/
+/*MESSAGE*/
+.chat div {margin: 16px;
+/*min-height: 100px; width: 200px;*/}
+
+.other {
+	align-self: flex-end;
+	color: #fff;
+	background: black;
+	border-radius: 16px 16px 0 16px;
+}
+
+.mine {
+	align-self: flex-start;
+	color: #000;
+	background: white;
+	border-radius: 16px 16px 16px 0;
+}
+
+.message {
+
+}
+
+.message a {
+	text-decoration: none;
+}
+/*END*/
+/*INPUT*/
+.send_box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 68px; 
+	height: 68px;
+	background: var(--bg);
+
+	-webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.send_box input {
+	display flex;
+	flex-grow: 1;
+	/*width: 188px;*/
+	height: 36px;
+	padding: 0 8px;
+	font-size: 14px;
+	color: var(--text_color);
+	background: var(--bg);
+	border: none;
+	border-radius: 4px;
+}
+
+.send_box button {
+	width: 36px;
+	height: 36px;
+	margin: 0 16px;
+	border: none;
+	border-radius: 4px;
+	background: var(--bg);
+
+	-webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.send_box button:hover {
+	box-shadow: -1px -1px 2px rgba(66, 66, 66, 0.25),
+	1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.send_box button:active {
+	background: linear-gradient(145deg, #101010, #131313);
+}
+/*END*/
+/*STYLES*/
+/*NEUMORPHISM*/
+.concave {
+	box-shadow: inset -6px -6px 12px rgba(66, 66, 66, 0.25),
+	inset 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.convex {
+	box-shadow: -6px -6px 12px rgba(66, 66, 66, 0.25),
+	6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+/*END*/
+/*GLASSMORPHISM*/

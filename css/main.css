@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+body{
+    margin: 0%;
+    overflow: hidden;
+    background: #121212;
+}
+
+.logo {
+	font-family: Quicksand-Bold;
+	font-size: 28px;
+	color: #FFFFFF;
+}
+
+.glass {
+	position: absolute;
+	font-family: Quicksand-Bold;
+	font-size: 28px;
+	color: #FFFFFF;
+	text-align: center;
+	width: 400px;
+	height: 300px;
+	background: rgba( 0, 0, 0, 0.50 );
+	/*box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );*/
+	backdrop-filter: blur( 8.0px );
+	-webkit-backdrop-filter: blur( 8.0px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
